@@ -1,0 +1,5 @@
+---
+- name: "Include labocbz.deploy_kubernetes_cluster playbook"
+  tags:
+      - "labocbz.deploy_kubernetes_cluster"
+  ansible.builtin.import_playbook: "../../playbook.yml"
