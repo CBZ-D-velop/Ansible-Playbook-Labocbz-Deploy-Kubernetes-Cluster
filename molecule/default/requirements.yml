@@ -19,6 +19,6 @@
   src: "https://github.com/CBZ-D-velop/Ansible-Role-Labocbz-Add-Logrotate-Confs.git"
   version: "2.2"
 
-- name: "labocbz.add_kubernetes_cluster"
-  src: "https://github.com/CBZ-D-velop/Ansible-Role-Labocbz-Add-Kubernetes-Cluster.git"
+- name: "labocbz.install_kubernetes_cluster"
+  src: "https://github.com/CBZ-D-velop/Ansible-Role-Labocbz-Install-Kubernetes-Cluster.git"
   version: "develop"
