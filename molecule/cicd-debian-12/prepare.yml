@@ -34,8 +34,8 @@
         group: "root"
         mode: 0700
 
-    - name: "Import inv_add_apache_confs__configurations_cert_bundles content if needed (CA)"
-      loop: "{{ inv_apache_cert_bundles }}"
+    - name: "Import cryptographic content if needed (CA)"
+      loop: "{{ inv_add_apache_confs__configurations_cert_bundles }}"
       loop_control:
         loop_var: bundle
       when: inv_add_apache_confs__configurations_cert_bundles is defined and bundle.type == "CA"
