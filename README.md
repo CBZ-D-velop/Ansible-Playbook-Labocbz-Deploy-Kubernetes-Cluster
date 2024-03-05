@@ -32,6 +32,18 @@ Whether you're deploying a simple web application or a complex microservices arc
 
 ## Deployment diagramm
 
+![Ansible-Playbook-Labocbz-Deploy-Kubernetes-Cluster](./assets/Ansible-Playbook-Labocbz-Deploy-Kubernetes-Cluster.drawio.svg)
+
+In the diagram, we see a multi-node setup representing the deployment achieved with the playbook. At the center of the deployment is a Kubernetes cluster orchestrated by K3S. This cluster consists of several nodes distributed across different servers, each running K3S to manage containerized applications.
+
+Within the Kubernetes cluster, Docker is installed on each node, providing the runtime environment for containerized applications. This setup ensures that applications can be easily packaged and deployed as containers, taking advantage of Docker's efficiency and flexibility.
+
+At the edge of the deployment, we have Apache2 serving as the web front-end server. Apache2 is responsible for handling incoming HTTP requests and serving web content to users. It acts as the entry point for external traffic, directing requests to the appropriate services running within the Kubernetes cluster.
+
+The ingress controller and mesh routing capabilities provided by K3S enable efficient traffic redirection within the Kubernetes cluster. This allows for seamless communication between services and ensures that requests are routed to the appropriate endpoints based on defined rules and configurations.
+
+Overall, this deployment architecture offers a scalable, resilient, and secure platform for deploying and managing containerized applications. By leveraging K3S, Docker, and Apache2, organizations can achieve high availability, reliability, and performance for their applications while streamlining deployment and management processes.
+
 ## Tests and simulations
 
 ### Basics
@@ -93,7 +105,7 @@ To install this playbook, just copy/import this playbook or raw file into your f
 ```YAML
 # From AWX / Tower
 ---
-all vars from to put/from AWX / Tower
+
 ```
 
 ## Architectural Decisions Records
