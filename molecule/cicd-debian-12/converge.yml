@@ -1,7 +1,0 @@
----
-- name: "Include labocbz.deploy_kubernetes_cluster playbook"
-  tags:
-      - "labocbz.deploy_kubernetes_cluster"
-  vars:
-    tower_env: "cicd-debian-12"
-  ansible.builtin.import_playbook: "../../playbook.yml"

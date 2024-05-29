@@ -23,7 +23,6 @@
 
 An Ansible playbook to deploy and configure a Kubernetes cluster on your hosts.
 
-
 This playbook streamlines the installation and configuration of a comprehensive stack consisting of K3S, Docker, and Apache2. You have the flexibility to choose whether to install all components together or separately, depending on your requirements. Additionally, SSL deployment is seamlessly handled by the playbook, although it assumes pre-existing SSL content.
 
 The playbook not only installs Apache as a web front-end server but also leverages the ingress controller and mesh routing capabilities provided by K3S. This setup allows for efficient traffic redirection to controllers and applications within the K3S environment. By utilizing these features, you can easily manage and scale your applications while ensuring high availability and reliability.
@@ -51,7 +50,6 @@ Overall, this deployment architecture offers a scalable, resilient, and secure p
 You have to run multiples tests. *tests with an # are mandatory*
 
 ```MARKDOWN
-# lint
 # syntax
 # converge
 # idempotence
@@ -76,7 +74,6 @@ yamllint -c ./.yamllint .
 ansible-lint --config=./.ansible-lint .
 
 # Execute and test your playbook
-molecule lint
 molecule create
 molecule list
 molecule converge
@@ -129,6 +126,14 @@ Here you can put your change to keep a trace of your work and decisions.
 * Apache2 installed
 * Docker installed
 * Tested
+
+### 2024-05-19: New CI
+
+* Added Markdown lint to the CICD
+* Rework all Docker images
+* Change CICD vars convention
+* New workers
+* Removed all automation based on branch
 
 ## Authors
 
