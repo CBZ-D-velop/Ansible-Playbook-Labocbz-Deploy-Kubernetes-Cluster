@@ -1,5 +1,0 @@
----
-inv_install_kubernetes_cluster__tls_sans:
-  - "molecule-cicd-debian-11-instance-1-deploy-kubernetes-cluster"
-  - "molecule-cicd-debian-11-instance-2-deploy-kubernetes-cluster"
-  - "molecule-cicd-debian-11-instance-3-deploy-kubernetes-cluster"

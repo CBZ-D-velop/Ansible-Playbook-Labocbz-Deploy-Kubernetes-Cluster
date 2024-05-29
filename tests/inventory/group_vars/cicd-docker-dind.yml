@@ -1,0 +1,5 @@
+---
+inv_install_kubernetes_cluster__tls_sans:
+  - "molecule-cicd-docler-dind-instance-1-deploy-kubernetes-cluster"
+  - "molecule-cicd-docler-dind-instance-2-deploy-kubernetes-cluster"
+  - "molecule-cicd-docler-dind-instance-3-deploy-kubernetes-cluster"
